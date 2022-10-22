@@ -2,7 +2,7 @@ Bacteria [] colony;
 
 void setup(){
   size (300,300);
-  colony = new Bacteria[75];
+  colony = new Bacteria[25];
   for (int i = 0; i < colony.length; i++){
     colony[i] = new Bacteria();
   }
@@ -41,7 +41,11 @@ class Bacteria{
   
   void show(){
     fill(myColor);
-    ellipse (x,y,20,20);
+    noStroke();
+    rect(x,y,10,10);
+    triangle(x,y,x+5,y-15,x+10,y);
+    triangle(x+10,y,x+25,y+5, x+10,y+10);
+    triangle(x+10,y+10,x+5,y+25,x,y+10);
+    triangle(x,y+10,x-15,y+5,x,y);
   }
 }
-
