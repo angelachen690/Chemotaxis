@@ -2,7 +2,7 @@ Bacteria [] colony;
 
 void setup(){
   size (300,300);
-  colony = new Bacteria[50];
+  colony = new Bacteria[75];
   for (int i = 0; i < colony.length; i++){
     colony[i] = new Bacteria();
   }
